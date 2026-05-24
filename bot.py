@@ -221,7 +221,7 @@ async def leaderboard(ctx):
 
 # The bot token must be set via the DISCORD_TOKEN environment variable.
 # In Railway: add DISCORD_TOKEN to your service's environment variables.
-token = os.getenv("DISCORD_TOKEN")
+token = os.getenv("MTUwODE2MDMwNzk4MDI3MTY5Ng.GUVilp.TuTI0NV0fNCs8H75KFrxb28RbdHZhacqO20pz8")
 if not token:
     raise RuntimeError(
         "DISCORD_TOKEN environment variable is not set. "
