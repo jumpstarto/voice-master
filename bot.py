@@ -224,7 +224,7 @@ async def leaderboard(ctx):
 token = os.getenv("MTUwODE2MDMwNzk4MDI3MTY5Ng.GUVilp.TuTI0NV0fNCs8H75KFrxb28RbdHZhacqO20pz8")
 if not token:
     raise RuntimeError(
-        "DISCORD_TOKEN environment variable is not set. "
+        "MTUwODE2MDMwNzk4MDI3MTY5Ng.GUVilp.TuTI0NV0fNCs8H75KFrxb28RbdHZhacqO20pz8"
         "Add it to your Railway service environment variables."
     )
 
