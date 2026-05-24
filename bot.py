@@ -3,6 +3,7 @@ import keep_alive
 from discord.ext import commands, tasks
 import aiosqlite
 from datetime import datetime
+import os
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="-", intents=intents)
@@ -218,4 +219,13 @@ async def leaderboard(ctx):
 
 # ---------------- RUN ----------------
 
-bot.run("MTQ3MzUwNzI5MjUzNTMyODk2NQ.GyzgsA.vj_LvFODXpxuiiU32r10kRuRIoKnQMlGMH-4g4")
+# The bot token must be set via the DISCORD_TOKEN environment variable.
+# In Railway: add DISCORD_TOKEN to your service's environment variables.
+token = os.getenv("DISCORD_TOKEN")
+if not token:
+    raise RuntimeError(
+        "DISCORD_TOKEN environment variable is not set. "
+        "Add it to your Railway service environment variables."
+    )
+
+bot.run(token)
